@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia Classic - Estilo e Tradição</title>
+    <style>
+        /* Estilos Globais */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Georgia', serif; }
+        body { background-color: #0f0f0f; color: #e0e0e0; line-height: 1.6; }
+        
+        /* Cores Principais - Estilo Industrial/Luxo */
+        :root {
+            --cor-destaque: #c5a059; /* Dourado Envelhecido */
+            --cor-fundo-card: #1a1a1a;
+        }
+
+        /* Seção Principal (Hero) */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=1470&auto=format&fit=crop') center/cover;
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 3px solid var(--cor-destaque);
+        }
+        .hero h1 { font-size: 3.2rem; margin-bottom: 20px; color: #fff; text-transform: uppercase; letter-spacing: 3px; }
+        .hero h1 span { color: var(--cor-destaque); }
+        .hero p { font-size: 1.2rem; max-width: 650px; margin-bottom: 40px; color: #bbb; font-family: 'Arial', sans-serif; }
+
+        /* Botão de Agendamento */
+        .btn-cta {
+            background-color: var(--cor-destaque);
+            color: #000;
+            text-decoration: none;
+            padding: 20px 45px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 2px; /* Botão Reto = Mais Clássico/Masculino */
+            text-transform: uppercase;
+            transition: 0.3s;
+            display: inline-block;
+        }
+        .btn-cta:hover {
+            background-color: #e2ba6e;
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
+        }
+
+        /* Seção de Serviços */
+        .servicos {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .servicos h2 { font-size: 2.5rem; margin-bottom: 50px; color: var(--cor-destaque); text-transform: uppercase; }
+        .grid-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: var(--cor-fundo-card);
+            padding: 40px 30px;
+            border: 1px solid #333;
+            width: 300px;
+            transition: 0.4s;
+        }
+        .card:hover { border-color: var(--cor-destaque); background-color: #222; }
+        .card h3 { margin-bottom: 15px; font-size: 1.5rem; color: var(--cor-destaque); font-family: 'Arial', sans-serif; }
+        .card p { color: #999; font-family: 'Arial', sans-serif; }
+        
+        /* Rodapé Assinado pela Agência */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background-color: #050505;
+            border-top: 1px solid #222;
+        }
+        footer p { font-size: 0.9rem; color: #555; font-family: 'Arial', sans-serif; }
+        footer .agencia { color: var(--cor-destaque); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <h1>Corte & <span>Barba</span></h1>
+        <p>Muito mais que um corte, uma experiência de estilo. Profissionais qualificados e ambiente exclusivo em Sua Cidade.</p>
+        <a href="#" class="btn-cta">📅 Agendar meu Horário</a>
+    </section>
+
+    <section class="servicos">
+        <h2>Serviços de Mestre</h2>
+        <div class="grid-cards">
+            <div class="card">
+                <h3>✂️ Corte Moderno</h3>
+                <p>Degradê, Undercut ou Social. Dominamos as técnicas mais atuais do mercado para o seu estilo.</p>
+            </div>
+            <div class="card">
+                <h3>🪒 Barba na Toalha</h3>
+                <p>O ritual clássico: toalha quente, navalha afiada e produtos de primeira linha para sua pele.</p>
+            </div>
+            <div class="card">
+                <h3>💆 Relaxamento</h3>
+                <p>Massagem capilar e cuidados com a pele para você sair da cadeira renovado.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por <span class="agencia">GS Gabriel Soluções</span> - Especialista em Sites para Barbearias e Salões</p>
+    </footer>
+
+</body>
+</html>
